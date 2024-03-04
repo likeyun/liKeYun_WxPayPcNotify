@@ -54,7 +54,7 @@ def process_wechat_window(wechat_window, prev_info):
 def send_http_request(info,amount,sender,timestamp):
 
     # 接收通知的Url
-    server_url = 'https://demo.likeyunba.com/pay/zsm/noti_PC.php'
+    server_url = 'https://www.yourdomain.com/notify.php'
     try:
         # 将金额、来自、到账时间POST给服务器
         response = requests.post(server_url, data={'amount': amount,'sender': sender,'timestamp': timestamp})
